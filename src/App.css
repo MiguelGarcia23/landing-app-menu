@@ -1,0 +1,281 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-mobile {
+  display: block;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+.height-banner {
+  height: 60vh;
+}
+
+.intro-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin: auto;
+  z-index: 10;
+  transform: translateY(-50%);
+  padding: 0 1rem;
+}
+
+.logo-banner {
+  width: 150px;
+}
+
+.title-banner {
+  font-size: 1.25rem;
+}
+
+.div-intro {
+  width: 100%;
+}
+
+.img-intro {
+  height: 350px;
+}
+
+.instructions-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.instruction {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.intro-demo-mobile {
+  display: block !important;
+}
+
+.intro-demo-desktop {
+  display: none !important;
+}
+
+.qr-demo {
+  display: none !important;
+}
+
+.number-table-demo-mobile {
+  display: block !important;
+}
+
+.number-table-demo-desktop {
+  display: none !important;
+}
+
+.components-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.component {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.component img {
+  object-fit: cover;
+}
+
+.component p {
+  display: block;
+}
+
+.div-component {
+  padding: 16px;
+}
+
+.title-component {
+  font-size: 1.25rem;
+}
+
+.pricing-tab {
+  width: 150px;
+  padding: 0.75rem 0 !important;
+  font-size: 1.125rem !important;
+}
+
+.active-pricing-tab {
+  background-color: rgb(255, 193, 7) !important;
+  color: black !important;
+  font-weight: 500 !important;
+  border: 1px solid black !important;
+}
+
+.contact-section {
+  background-image: url('./assets/contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-contact {
+  width: 100%;
+}
+
+@media ( min-width: 700px ) {
+
+  .navbar-mobile {
+    display: none;
+  }
+  
+  .navbar-desktop {
+    display: block;
+  }
+
+  .height-banner {
+    height: 100vh;
+  }
+
+  .intro-banner {
+    top: 56%;
+    padding: 0;
+  }
+  
+  .logo-banner {
+    width: 200px;
+  }
+  
+  .title-banner {
+    font-size: 1.75rem;
+  }
+
+  .div-intro {
+    width: 50%;
+  }
+
+  .img-intro {
+    height: 500px;
+  }
+
+  .intro-demo-mobile {
+    display: none !important;
+  }
+
+  .intro-demo-desktop {
+    display: block !important;
+  }
+
+  .qr-demo {
+    display: block !important;
+  }
+
+  .number-table-demo-mobile {
+    display: none !important;
+  }
+  
+  .number-table-demo-desktop {
+    display: block !important;
+  }
+
+  .input-contact {
+    width: 48%;
+  }
+
+}
+
+@media ( min-width: 1000px ) {
+
+  .instructions-section {
+    flex-direction: row;
+  }
+
+  .instruction {
+    width: 25%;
+  }
+
+  .components-section {
+    flex-direction: row;
+    width: 800px;
+    height: 430px;
+  }
+  
+  .component {
+    width: 0;
+    margin: 0;
+    flex-grow: 1;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  
+  .component img {
+    object-fit: cover;
+  }
+  
+  .component p {
+    display: none;
+    transition: .5s ease;
+  }
+  
+  .component:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  
+  .component:hover p {
+    display: block;
+  }
+
+  .div-component {
+    padding: 16px 72px;
+  }
+
+  .title-component {
+    font-size: 1.75rem;
+  }
+
+}
